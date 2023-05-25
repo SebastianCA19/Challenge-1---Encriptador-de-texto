@@ -1,0 +1,308 @@
+body{
+    background-image: linear-gradient(to right, #6190e8, #a7bfe8);
+    background-size: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 40px;
+    position: absolute;
+    height: 48px;
+    width: 120px;
+    left: 40px;
+    top: 40px;
+    border-radius: 0px;
+}
+
+.input{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 150px;
+}
+
+.input textarea{
+    width: 380px;
+    height: 48px;
+    border-style: solid;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-color: rgb(124, 124, 124, 0);
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color:#0A3871;
+    padding: 10px 16px;
+    padding-bottom: 16px;
+    transition: .3s;
+    resize: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0,0.3);
+}
+
+.input textarea.text::placeholder{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    color:#001836;
+}
+
+.input textarea.text:hover{
+    transition: 0.2s;
+    border-style: solid;
+    border-color: rgb(51, 112, 226);
+    border-width: 3px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.input textarea.text:is(:focus){
+    outline: none;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color:#001836;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.3);
+    width: 650px;
+    height: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-all;
+    padding: 10px 16px;
+}
+
+.input textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+button.encriptar{
+    position: absolute;
+    left:240px;
+    bottom:72px;
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 328px;
+    height: 67px;
+    border-style: none;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 16px;
+    line-height: 19.36px;
+}
+
+button.encriptar:hover{
+    background-color: rgb(255, 255, 255, 0.4);
+    color: #0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+    border-radius: 24px;
+    transition: .2s;
+}
+
+button.desencriptar{
+    position: absolute;
+    left:592px;
+    bottom:72px;
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 328px;
+    height: 67px;
+    border-style: solid;
+    border-radius: 24px;
+    border-width: 2px;
+    border-color: #0A3871;
+    background: rgb(255, 255, 255, 0.4);
+    color: #0A3871;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 16px;
+    line-height: 19.36px;
+}
+
+button.desencriptar:hover{
+    border-style: none;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    transition: .2s;
+}
+
+button.copiar{
+    position: absolute;
+    bottom:115px;
+    right: 240px;
+    width: 200px;
+    height: 37px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button.copiar:hover{
+    border-style: none;
+    border-radius: 20px;
+    background-color: #0A3871;
+    color: white;
+    transform: scale(1.2);
+    transition: .2s;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.izq{
+    background: rgb(255, 255, 255, 0.5);
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.izq img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    left:75px;
+    top:95px;
+}
+
+.izq p.excl{
+    position: absolute;
+    top:350px;
+    left:75px;
+    width: 250px;
+    height: 58px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 24px;
+}
+
+.izq p.sub{
+    position: absolute;
+    top: 430px;
+    left: 50px;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 150%;
+    color:#495057;
+}
+
+.izq textarea#resultado{
+    align-self: center;
+    position: absolute;
+    top: 50px;
+    left:30px;
+    resize: none;
+    width: 336px;
+    height: 460px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color:#3c4146;
+    background: rgb(124, 124, 124, 0);
+    border-style: none;
+}
+
+.izq textarea#resultado:focus{
+    outline: none;
+}
+
+.atencion{
+    position: absolute;
+    bottom: 145px;
+    left: 260px;
+    text-transform: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    color:white;
+}
+
+.subtitulo{
+    position: absolute;
+    bottom: 141px;
+    left:290px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 5px;
+    color:#1b1c1d;
+}
+
+.alerta{
+    position: absolute;
+    top: 103px;
+    left: 260px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: #001836;
+    font-weight: bold;
+    transition: 0.3s;
+}
